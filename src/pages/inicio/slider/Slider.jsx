@@ -1,8 +1,10 @@
 import React from 'react'
-
+import './slider.css'
 const Slider = () => {
   return (
-    <div><img src="" alt="" /></div>
+    <section className='slider'>
+
+    </section>
   )
 }
 

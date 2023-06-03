@@ -1,0 +1,31 @@
+
+.descripcion{
+    background-color: #D9D9D9;
+    width: 100%;
+    padding: 2rem;
+    
+}
+.descripcion_titulo{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+.descripcion_empresa{
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.descripcion_imagen{
+    width: 200px;
+    display: flex;
+    margin: 0 auto;
+}
+
+
+/* 
+1rem = 16px
+0.5rem= 8px;
+1.5rem = 24px;
+2rem = 32px;
+
+*/
