@@ -27,4 +27,7 @@ Cambio de rama secundaria a principal
 ```cmd
 git checkout main
 ```
-
+Ejecutar servidor local
+```cmd
+npm run dev
+```
