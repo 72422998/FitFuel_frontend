@@ -39,3 +39,16 @@ Deshacer todos los cambios realizados en todos los archivos y volver al estado d
 ```cmd
 git checkout -- .
 ```
+Visualizar ramas remotas
+```
+git branch -r
+```
+Crear una rama local para cada rama remota que se desee traer
+```cmd
+git checkout -b {nombre_de_rama_local origin/nombre_de_rama_remota}
+```
+Eliminar branch
+```cmd
+git branch -d {nombre de rama}
+```
+
