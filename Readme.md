@@ -31,3 +31,11 @@ Ejecutar servidor local
 ```cmd
 npm run dev
 ```
+Deshacer todos los cambios realizados en un archivo especifico y restaurarlo al estado del ultimo commit
+```cmd
+git checkout -- {nombre del archivo}
+```
+Deshacer todos los cambios realizados en todos los archivos y volver al estado del ultimo commit
+```cmd
+git checkout -- .
+```
