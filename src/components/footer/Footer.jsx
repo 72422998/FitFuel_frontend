@@ -11,9 +11,9 @@ const Footer = () => {
             <li className='footer_list'><Link to='/contactanos' className='footer_link'>Contáctanos</Link></li>
         </div>
         <div className='footer_social'>
-          <a href=""  className='footer_social_icon'><i class="fa-brands fa-facebook"></i></a>
-          <a href="" className='footer_social_icon'><i class="fa-brands fa-twitter"></i></a>
-          <a href="" className='footer_social_icon'><i class="fa-brands fa-instagram"></i></a>
+          <a href=""  className='footer_social_icon'><i className="fa-brands fa-facebook"></i></a>
+          <a href="" className='footer_social_icon'><i className="fa-brands fa-twitter"></i></a>
+          <a href="" className='footer_social_icon'><i className="fa-brands fa-instagram"></i></a>
         </div>
     </footer>
   )
