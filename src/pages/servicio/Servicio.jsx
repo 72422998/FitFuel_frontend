@@ -29,7 +29,7 @@ const Servicio = () => {
     <div className='Nutricionista_tarjetas'>
       {servicios.map((servicio) => (
           <div key={servicio.id} className='Nutricionista_tarjeta'>
-            <img className='Nutricionista_imagen' src={cliente} alt="Nutricionista"/>
+            <img className='Nutricionista_imagen' src={servicio.foto} alt="Nutricionista"/>
             <h3 className='Nutricionista_nombre' >{servicio.profesion}</h3>
           </div>
         
