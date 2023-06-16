@@ -1,0 +1,60 @@
+
+.detalle_contenido{
+    width: 100%;
+    padding: 1.5rem;
+}
+.detalle_youtube{
+    width: 100%;
+    height: 220px;
+}
+.detalle_nombre{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.detalle_wrap{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.detalle_precio{
+    font-weight: 500;
+}
+.detalle_profesion{
+    text-transform: capitalize;
+}
+.detalle_descripcion{
+    margin-bottom: 1.2rem;
+}
+.detalle_redes{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 1rem;
+}
+.detalle_redes_icon{
+    margin-right: 0.2rem;
+    color: #000;
+}
+.detalle_redes_link{
+    font-size: 0.8rem;
+    color: #000;
+    text-decoration: none;
+    
+}
+.detalle_btn{
+    display: flex;
+    justify-content: center;
+}
+.detalle_link{
+    color: white;
+    text-decoration: none;
+}
+.detalle_btn button{
+    padding: 1rem 2rem 1rem 2rem;
+    color: white;
+    background-color: #1B7E69;
+    border: none;
+    border-radius: 0.2rem;
+}
+
