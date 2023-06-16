@@ -3,7 +3,7 @@
     background: black;
     padding: 2.5rem;
     display: grid;
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:repeat(2,2fr);
 }
 .footer_page{
     display: flex;
@@ -30,3 +30,30 @@
     font-size: 1.2rem;
 }
 
+/*Responsive*/
+
+@media (min-width:750px){
+    .footer_page{
+        font-size: 1.5rem;
+        margin-left: 45%;
+    }
+    .footer_social{
+        align-items: center;   
+        .fb::before{
+            color: white;
+            content: " fitfuelpage";
+        }
+        .twtr::before{
+            color: white;
+            content: " @fit_fuel";
+        }
+        .inst::before{
+            color: white;
+            content: " @fitfuel2020";
+        }
+    }
+    .footer_social_icon{
+        font-size: 1.8rem;
+        text-decoration: none;
+    }
+}

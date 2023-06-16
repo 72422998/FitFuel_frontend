@@ -29,3 +29,45 @@
 2rem = 32px;
 
 */
+
+/*Responsive*/
+
+@media (min-width:600px) {
+    .descripcion_titulo{
+        font-size: 4rem;
+    }
+    .descripcion_empresa{
+        font-size: 2rem;
+    }
+    .descripcion_imagen{
+        width: 300px;
+    }
+}
+
+@media (min-width:1000px) {
+    .descripcion_titulo{
+        position: relative;
+        display: inline-block;
+        vertical-align: bottom;
+        width: 46%;
+        top: 4rem;
+        left: 50%;
+    }
+    .descripcion_empresa{
+        /* background-color: aqua; */
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        width: 40%;
+        margin-right: 15%;
+        margin-top: 10%;
+        left: 50%
+    }
+    .descripcion_imagen{
+        position: relative;
+        width: 40%;
+        display: inline;
+        bottom: 4rem;
+        right: 50%;
+    }
+}

@@ -31,3 +31,19 @@
 .testimonios_esfera:first-child{
     background: #1B7E69;
 }
+
+/*Responsive*/
+
+@media (min-width:600px) {
+    .testimonios_image{
+        width: 250px;
+        height: 250px;
+    }
+    .testimonios_text{
+        font-size: 2rem;
+    }
+    .testimonios_esfera{
+        height: 15px;
+        width: 15px;
+    }
+}
