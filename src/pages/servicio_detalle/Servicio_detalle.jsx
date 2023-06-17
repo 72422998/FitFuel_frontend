@@ -3,9 +3,11 @@ import React,{useState, useEffect} from 'react'
 import { useParams } from 'react-router-dom'
 import './servicio_detalle.css'
 import { Link } from 'react-router-dom';
+import { Comentarios } from './comentarios/Comentarios';
 const Servicio_detalle = () => {
     const {id} = useParams();
     const [servicio,setServicio] = useState(null);
+    
     useEffect(()=>{
         axios.get(`
         http://localhost:3000/servicios/${id}
@@ -17,13 +19,19 @@ const Servicio_detalle = () => {
             `,error);
         }
     )}, [id])
+    
     if(!servicio){
         return <div>
             Error al cargar el servicio
         </div>
     }
+    
   return (
-    <section className='servicio_detalle'>
+  
+
+
+        <section className='servicio_detalle'>
+        
         <div className='detalle_video'>
             <iframe src={`https://www.youtube.com/embed/${servicio.nutricionista.video}`}  allowFullScreen  title='Michaela' className='detalle_youtube'></iframe>
         </div>
@@ -44,8 +52,10 @@ const Servicio_detalle = () => {
             <button ><Link to={'/servicios/detalle/cita'} className='detalle_link'>Agendar</Link></button>
             </div>
         </div>
+        <Comentarios></Comentarios>
+        </section>
         
-    </section>
+
   )
 }
 

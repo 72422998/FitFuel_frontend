@@ -30,10 +30,21 @@ const Servicio = () => {
     <div className='Nutricionista_tarjetas'>
       {servicios.map((servicio) => (
           <div key={servicio.id} className='Nutricionista_tarjeta'>
-            <img className='Nutricionista_imagen' src={servicio.nutricionista.foto} alt="Nutricionista"></img>
-            <h3 className='Nutricionista_nombre' >{servicio.nutricionista.profesion}</h3>
-            <p className='Nutricionista_servicos'>{servicio.nombre}</p>
-            <button><Link to={`/servicios/detalle/${servicio.id}`} className='Nutricionista_link'>Ver detalle</Link></button>
+            <Link to={`/servicios/detalle/${servicio.id}`}>
+              <img src={servicio.nutricionista.foto} alt="nutricionista" className='Nutricionista_imagen'/>
+              <div className='Nutricionista_content'>
+                <h3>{servicio.nutricionista.nombre}</h3>
+                <p>{servicio.nutricionista.categoria}</p>
+              </div>
+            </Link>
+            {/* <div className='Nutricionista_imagen'>
+            <img  src={servicio.nutricionista.foto} alt="Nutricionista"></img>
+            </div>
+            <div className='Nutricionista_interact'>
+              <h3 className='Nutricionista_nombre' >{servicio.nutricionista.profesion}</h3>
+              <p className='Nutricionista_servicos'>{servicio.nombre}</p>
+              <button><Link to={`/servicios/detalle/${servicio.id}`} className='Nutricionista_link'>Ver detalle</Link></button>
+            </div> */}
           </div>
         
       ))}
