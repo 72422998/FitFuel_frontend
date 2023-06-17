@@ -1,14 +1,14 @@
 
 
-const BASE_URL = ""
-
+const BASE_URL = "http://localhost:3000"
 const FetchService = async() => {
   try {
-    const response = await fetch(`${BASE_URL}/listar/nutricionista`);
+    const response = await fetch(`${BASE_URL}/servicios/listar`);
     const data = await response.json();
+    console.log(response)
     return data;
   } catch (error) {
-    console.error('Error no se encontro la ruta :/',error)
+    console.error('Error, no se encontro la ruta :/',error)
     return [];
   }
 }

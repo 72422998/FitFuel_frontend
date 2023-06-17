@@ -1,0 +1,60 @@
+.Login_titulo{
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 400;
+    margin: 2rem 2rem;
+}
+.Login_form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.Login_input{
+    padding: 0.5rem;
+    margin: 0.8rem;
+}
+
+.Login_icon{
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-top: 1rem;   
+}
+
+.Login_redes{
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.fa-brands{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+.fa-google{
+    color: crimson;
+    margin-right: 1rem;;
+}
+.fa-face{
+    color: #3b5998;
+    margin-left: 1rem;;
+}
+.Login_button{
+    padding: 0.5rem;
+    background-color: #1B7E69;
+    color: #ffffff;
+    border: none;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    margin-bottom: 0.8rem;
+    border-radius: 5px;
+}
+.Login_redirect{
+    font-size: 0.9rem;
+    text-align: center;  
+    margin-bottom: 1rem; 
+}
+.Login_link{
+    margin-left: 0.5rem;
+    color: #1B7E69;
+    text-decoration: none;
+    font-weight: 500;
+}

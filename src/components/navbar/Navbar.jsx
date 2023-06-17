@@ -14,6 +14,8 @@ const Navbar = () => {
             <li className='element'><Link to='/servicios' className='link'>Servicios</Link></li>
             <li className='element'><Link to='/sobre-nosotros' className='link'>Sobre nosotros</Link></li>
             <li className='element'><Link to='/contactanos' className='link'>Contáctanos</Link></li>
+            <li className='element'><Link to='/login' className='link'>Login</Link></li>
+            <li className='element'><Link to='/register' className='link'>Register</Link></li>
         </ul>
         <div className={`nav_toggle ${isOpen && 'open'}`} onClick={()=>{setIsOpen(!isOpen)}}>
           <span></span>
