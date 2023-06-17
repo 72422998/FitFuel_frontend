@@ -1,10 +1,12 @@
 .navbar {
-    position: relative;
     height: 70px;
     background-color: #1B7E69;
     display: flex;
     justify-content: space-between;
-    z-index: 3;
+    align-items: center;
+    z-index: 9999;
+    padding: 1rem;
+    position: relative;
 }
 
 .logo {
@@ -12,12 +14,29 @@
     margin: 15px;
     color: white;
 }
-
-.nav_items {
-    position: absolute;
+.nav_items{
+    position: fixed;
+    left: 0;
     top: 0;
     display: flex;
-    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    right: 0;
+    justify-content: center;
+    height: 100%;
+    background:#1B7E69;
+    transform: translateX(-100%);
+    transition: 0.5s ease all;
+    background-color: #1B7E69;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+/* .nav_items {
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    bottom: 0;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -25,7 +44,9 @@
     transform: translateX(-100%);
     transition: 0.5s ease all;
     background-color: #1B7E69;
-}
+    padding-bottom: 20px;
+    overflow: hidden;
+} */
 
 .nav_items.open {
     transform: translateX(0);
@@ -42,11 +63,7 @@
     color: white;
     position: relative;
     text-decoration: none;
- 
-}
-
-.nav_toggle {
-    display: none;
+    
 }
 
 .navbar .nav_items {

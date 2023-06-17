@@ -40,9 +40,15 @@ const Servicio_detalle = () => {
             <div className='detalle_wrap'>
             <p className='detalle_profesion'>{servicio.nombre}</p>
             <p className='detalle_precio'>S/{servicio.precio}</p>
+            
             </div>
+            
             <p className='detalle_descripcion'>{servicio.nutricionista.descripcion}</p>
-            <div className='detalle_redes'>
+            
+            
+
+        </div>
+        <div className='detalle_redes'>
                 <a href="" className='detalle_redes_link'><i className="fa-brands fa-whatsapp detalle_redes_icon"></i>{servicio.nutricionista.whatsapp}</a>
                 <a href="" className='detalle_redes_link'><i className="fa-brands fa-facebook detalle_redes_icon"></i>{servicio.nutricionista.facebook}</a>
                 <a href="" className='detalle_redes_link'><i className="fa-brands fa-instagram detalle_redes_icon"></i>{servicio.nutricionista.instagram}</a>
@@ -51,7 +57,6 @@ const Servicio_detalle = () => {
             <div className='detalle_btn'>
             <button ><Link to={'/servicios/detalle/cita'} className='detalle_link'>Agendar</Link></button>
             </div>
-        </div>
         <Comentarios></Comentarios>
         </section>
         
