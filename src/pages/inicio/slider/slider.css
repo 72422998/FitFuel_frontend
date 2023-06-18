@@ -9,7 +9,7 @@
 .slider {
     width: 500%;
     position: relative;
-    animation: slide-image 5s linear infinite;
+    animation: slide-image 10s linear infinite;
 }
 
 .play-animation{
@@ -89,6 +89,6 @@
 
 @media (min-width:1270px) {
     .slider-container{
-        height: 899px;
+        height: 1150px;
     }
 }

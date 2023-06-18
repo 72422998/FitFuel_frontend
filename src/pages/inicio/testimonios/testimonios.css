@@ -2,7 +2,27 @@
     padding: 2rem;
     width: 100%;
     background: #ffffff;
+    /*slider*/
+    height: 449px;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
 }
+
+.slide {
+    width: 500%;
+    position: relative;
+    animation: slide-test 8s linear infinite;   
+}
+
+.slide-test {
+    width: 20%;
+    height: 500px;
+    float: left;
+    position: relative;
+}
+
+
 .testimonios_image{
     width: 150px;
     display: flex;
@@ -11,10 +31,44 @@
     height: 150px;
     object-fit: cover;
     margin-bottom: 1rem;
+    
 }
+
+@keyframes slide-test {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: -400%;
+    }
+}
+
 .testimonios_text{
-    text-align: justify;
+    box-sizing: border-box;
+    text-align: center;
     margin-bottom: 1rem;
+    background-color: #ffffff;
 }
 .testimonios_esferas{
     display: flex;
