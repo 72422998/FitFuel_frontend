@@ -1,0 +1,68 @@
+/*ESTILOS DE LA PAGINA */
+.contactanos{
+   width: 100%;
+   height: auto;
+   margin: 80px auto;
+   border-radius: 10px;
+   padding: 1rem;
+   background-color: #fbfbfb; 
+  
+}
+.form_contactanos{
+    display: flex;
+    flex-direction: column;
+}
+.boton_container{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+
+}
+.boton{
+    color: white;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    margin: 0 auto;
+    text-transform: uppercase;
+    background-color: #1B7E69;
+    border-color:#1B7E69;
+    border-style: solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+textarea{
+    height: 300px;
+    background-color: #fbfbfb;
+    border-radius: 5px;
+    border-style: solid;
+    border-width:1px ;
+    border-color: #1B7E69;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+
+}
+.colocar_nombre{
+    
+    color:#1B7E69;
+}
+.colocar_email{
+    color: #1B7E69;
+}
+.colocar_asunto{
+    color: #1B7E69;
+}
+.nota{
+    color: #1B7E69;
+}
+@media (min-width:744px){
+    .appointment_form{
+        width: 350px;
+        align-content: flex-start;
+
+        
+    }
+    
+}

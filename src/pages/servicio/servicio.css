@@ -5,6 +5,7 @@
     position: relative;
     width: 100%;
     margin-bottom: 1rem;
+    
 }
 .Nutricionista_imagen{
     display: block;
@@ -25,4 +26,26 @@
 }
 .Nutricionista_content h3{
     font-weight: 400;
+}
+@media (min-width:480px) {
+    .Nutricionista_tarjetas{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+}
+@media (min-width:744px) {
+    .Nutricionista_tarjetas{
+        grid-template-columns: repeat(3,1fr);
+        gap: 2rem;
+    }
+}
+@media (min-width:996px) {
+    .Nutricionista_servicio{
+        padding: 2rem;
+    }
+    .Nutricionista_tarjetas{
+        grid-template-columns: repeat(4,1fr);
+        gap: 2rem;
+    }
 }
