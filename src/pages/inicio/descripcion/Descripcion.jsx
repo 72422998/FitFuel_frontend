@@ -1,17 +1,20 @@
 import React from 'react'
-import imagen from  '../../../assets/descripcion-index.jpg'
+import imagen from  '../../../assets/descripcion.jpg'
 import './descripcion.css'
 const Descripcion = () => {
   return (
 
-    <section className='descripcion'>
-      <div className='warper_descripcion'>
-      <h1 className='descripcion_titulo'>Fit Fuel</h1>
-      <p className='descripcion_empresa'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ex ab quaerat excepturi adipisci consectetur nobis magni minima quidem numquam? Quo officiis inventore repellendus aspernatur. Hic quisquam expedita ipsa nam.</p>
-        
-      <img className='descripcion_imagen' src={imagen}alt="fitfuel" />
+    <section className='descripcion_section'>
+      <div className='wrapper_descripcion'>
+      <h1 className='descripcion_titulo'>Objetivos</h1>
+      <p className='descripcion_empresa'><span></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ex ab quaerat excepturi adipisci consectetur .</p>
+      <p className='descripcion_empresa'><span></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ex ab quaerat excepturi adipisci consectetur .</p>
+      <p className='descripcion_empresa'><span></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ex ab quaerat excepturi adipisci consectetur .</p>
+      <p className='descripcion_empresa'><span></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ex ab quaerat excepturi adipisci consectetur .</p>
       
       </div>
+      <div className='wrapper_imagen'>
+        <img className='descripcion_imagen' src="" alt="" /></div>
     </section>
   )
 }
