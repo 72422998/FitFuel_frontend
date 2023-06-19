@@ -14,13 +14,13 @@ const Navbar = () => {
         <span className='logo'>FitFuel</span>
         </div>
         <ul className={`nav_items ${isOpen && 'open'}`}>
-            <li className='element' onClick={closeMenu}><NavLink to='/' className="link" activeClassName='active'>Inicio</NavLink></li>
-            <li className='element' onClick={closeMenu}><NavLink to='/servicios' className="link" activeClassName='active' >Servicios</NavLink></li>
-            <li className='element' onClick={closeMenu}><NavLink to='/sobre-nosotros' className="link" activeClassName='active'>Nosotros</NavLink></li>
-            <li className='element' onClick={closeMenu}><NavLink to='/contactanos' className="link" activeClassName='active'>Contáctanos</NavLink></li>
+            <li className='element' onClick={closeMenu}><NavLink to='/' className="link" activeclassname='active'>Inicio</NavLink></li>
+            <li className='element' onClick={closeMenu}><NavLink to='/servicios' className="link" activeclassname='active' >Servicios</NavLink></li>
+            <li className='element' onClick={closeMenu}><NavLink to='/sobre-nosotros' className="link" aactiveclassname='active'>Nosotros</NavLink></li>
+            <li className='element' onClick={closeMenu}><NavLink to='/contactanos' className="link" activeclassname='active'>Contáctanos</NavLink></li>
             <ul className='auth'>
-            <li className='element' onClick={closeMenu}><NavLink to='/login' className="link" activeClassName='active'>Login</NavLink></li>
-            <li className='element' onClick={closeMenu}><NavLink to='/register' className="link" activeClassName='active'>Register</NavLink></li>
+            <li className='element' onClick={closeMenu}><NavLink to='/login' className="link" activeclassname='active'>Login</NavLink></li>
+            <li className='element' onClick={closeMenu}><NavLink to='/register' className="link" activeclassname='active'>Register</NavLink></li>
             </ul>
         </ul>
         <div className={`nav_toggle ${isOpen && 'open'}`} onClick={()=>{setIsOpen(!isOpen)}}>
