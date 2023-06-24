@@ -5,7 +5,7 @@ import { Descripcion } from './descripcion/Descripcion'
 import { Offer } from './offer/Offer'
 import bg1 from '../../assets/bg1.png';
 import bg2 from '../../assets/bg2.png';
-import bg3 from '../../assets/bg4.jpg';
+import bg3 from '../../assets/bg3.png';
 
 const Inicio = () => {
 
