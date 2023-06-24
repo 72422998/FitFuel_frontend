@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import { Link, useLocation, NavLink } from 'react-router-dom'
 import "./navbar.css"
+import logoIcon from '../../assets/logo.png'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -10,8 +11,9 @@ const Navbar = () => {
   }
   return (
     <nav className='navbar'>
-        <div className=''>
-        <span className='logo'>FitFuel</span>
+        <div className='logo_container'>
+        <img className='logo_icon' src={logoIcon} alt="" />
+        <Link to='/' className='logo_text'><span>Fit</span>fuel</Link>
         </div>
         <ul className={`nav_items ${isOpen && 'open'}`}>
             <li className='element' onClick={closeMenu}><NavLink to='/' className="link" activeclassname='active'>Inicio</NavLink></li>

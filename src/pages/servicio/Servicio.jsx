@@ -25,7 +25,7 @@ const Servicio = () => {
   return (
     <section className='Nutricionista_servicio'>
       <select name="tipo_servicio" id="tipo_servicio" className='Nutricionista_select'>
-        <option value="">Selecciona un servicio</option>
+        <option value="">Selecciona un Objetivo</option>
         <option value="Nutricion_deportivo">Nutricion Deportiva</option>
         <option value="Nutricion_infantil">Nutricion Infantil</option>
         <option value="Nutricion_vegetariana">Dieta vegetariana</option>

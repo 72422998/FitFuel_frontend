@@ -1,6 +1,6 @@
 .navbar {
     height: 70px;
-    background-color: #1B7E69;
+    background-color: #f5f5f5;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -8,12 +8,24 @@
     padding: 1rem;
     position: relative;
     font-weight: 400;
+    position: sticky;
+    top: 0;
 }
 
-.logo {
+.logo_icon{
+    width: 30px;
+    margin: 0;
+}
+
+
+.logo_text {
     font-size: 1.2rem;
-    margin: 15px;
-    color: white;
+    color: black;
+    text-decoration: none;
+    margin-left: 0.5rem;
+}
+.logo_text span{
+    color: #1B7E69;
 }
 .nav_items{
     position: fixed;
@@ -25,10 +37,9 @@
     right: 0;
     justify-content: center;
     height: 100%;
-    background:#1B7E69;
     transform: translateX(-100%);
     transition: 0.5s ease all;
-    background-color: #1B7E69;
+    background-color: #f5f5f5;
     padding-bottom: 20px;
     overflow: hidden;
 }
@@ -40,7 +51,7 @@
 }
 .auth li .link{
     padding: 0.2rem 1rem 0.2rem 1rem;
-    border: 1px solid #ffffff;
+    border: 1px solid #000;
     font-size: 1rem;
 }
 .nav_items.open {
@@ -55,14 +66,13 @@
 
 .nav_items li .link{
     margin: 15px;
-    color: white;
+    color: #000;
     position: relative;
     text-decoration: none;
     font-size: 1.2rem;
 }
 .nav_items li .link.active{
-    font-weight: bold;
-    color: #fcfcfc;
+    color: #1B7E69;
 }
 
 .navbar .nav_items {
@@ -78,7 +88,7 @@
 .nav_toggle span {
     width: 30px;
     height: 4px;
-    background-color: white;
+    background-color: #000;
     margin-bottom: 5px;
     border-radius: 2px;
     transform-origin: 5px 0;
@@ -101,8 +111,7 @@
     .navbar{
         display: grid;
         grid-template-columns: 1fr 3fr;
-        position: sticky;
-        top: 0;
+        
     }
    
     .nav_items{

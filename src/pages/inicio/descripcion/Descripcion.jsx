@@ -1,5 +1,4 @@
 import React from 'react'
-import imagen from  '../../../assets/descripcion.jpg'
 import './descripcion.css'
 const Descripcion = () => {
   return (
