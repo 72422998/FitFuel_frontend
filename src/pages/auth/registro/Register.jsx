@@ -8,7 +8,7 @@ function Register() {
     <section className='Nutricionist_register'>
       <div className='Register_header'>
       <img className="logo" src={logo} alt="logo" />
-      <h1 className='Register_title'><span>Reg</span>ister</h1>
+      <h1 className='Register_title'>Register</h1>
       </div>
       <form action="" className='Register_form'>
         <div className='Register_wrapper user'>
@@ -28,11 +28,11 @@ function Register() {
         
         <div className='Register_wrapper password'>
           <i className="fa-solid fa-lock Register_icon "></i>
-          <input className='Register_input password' type="password" placeholder='Contraseña'/>
+          <input className='Register_input password' type="password" placeholder='******'/>
         </div>
         <div className='Register_wrapper password_repeat'>
           <i className="fa-solid fa-lock Register_icon "></i>
-          <input className='Register_input password_repeat' type="password" placeholder='Repita la contraseña'/>
+          <input className='Register_input password_repeat' type="password" placeholder='******'/>
         </div>
         <div className='container_btn'>
         <button className='Register_button'>Registrarse</button>
