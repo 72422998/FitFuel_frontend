@@ -4,10 +4,13 @@ import './footer.css'
 const Footer = () => {
   return (
     <footer className='footer'>
+        <div className="footer_box_logo">
+          <h1 className='footer_logo'>Fitfuel</h1>
+        </div>
         <div className='footer_page'>
             <li className='footer_list'><Link to='/' className='footer_link'>Inicio</Link></li>
             <li className='footer_list'><Link to='/servicios' className='footer_link'>Servicios</Link></li>
-            <li className='footer_list'><Link to='/sobre-nosotros' className='footer_link'>Sobre nosotros</Link></li>
+            <li className='footer_list'><Link to='/sobre-nosotros' className='footer_link'>Nosotros</Link></li>
             <li className='footer_list'><Link to='/contactanos' className='footer_link'>Contáctanos</Link></li>
         </div>
         <div className='footer_social'>
