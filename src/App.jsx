@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import './global/global.css'
+import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import {Inicio} from './pages/inicio/Inicio'
 import { Servicio } from './pages/servicio/Servicio'
