@@ -1,0 +1,132 @@
+.Nutricionist_register{
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--background-color-secondary);
+    display: grid;
+    place-items: center;
+}
+
+.Register_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+.logo{
+    height: 40px;
+    width: 40px;
+}
+.logo, .Register_title{
+    padding: .5rem;
+}
+.Register_title{
+    text-align: center;
+    font-weight: 400;
+    padding: 0;
+    color: var(--text-color-secondary);
+}
+.Register_title span{
+    color: #1B7E69;
+}
+
+
+.Register_form{
+    display: flex;
+    padding: 1.5rem;
+    flex-direction: column;
+}
+.Register_wrapper{
+    padding: 0.8rem;;
+    position: relative;
+    /* border: 1px solid #1B7E69; */
+    margin-bottom: 1.5rem;
+    grid-column: span 1;
+    background-color: var(--background-input-color);
+    border-radius: 1.2rem;
+}
+.Register_input{
+    outline: none;
+    position: absolute;
+    padding: 0.2rem;
+    border: none;
+    background: transparent;
+    color: var(--text-color-secondary);
+    
+}
+.Register_icon{
+    font-size: 1.2rem;
+    margin-right: 0.2rem;
+    color: var(--text-color-secondary);
+}
+.container_btn{
+    margin-bottom: 1.5rem;
+}
+.Register_button{
+    font-size: 1rem;
+    background-color: #1B7E69;
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    display: block;
+    margin: 0 auto;
+    
+}
+.Register_redirect{
+    font-size: 0.9rem;
+    text-align: center;
+    color: var(--text-color-secondary);
+}
+.Register_link{
+    margin-left: 0.5rem;
+    color: #1B7E69;
+    text-decoration: none;
+}
+.email{
+    grid-column: span 2;
+}
+.container_btn{
+    grid-column: span 2;
+}
+.container_redirect{
+    text-align: center;
+    grid-column: span 2;
+}
+@media(min-width:480px){
+    .Register_form{
+        display: grid;
+        width: 450px;
+        grid-template-columns: repeat(2,1fr);
+        gap: 0.4rem;
+    }
+}
+
+@media(min-width:744px){
+    .Nutricionist_register{
+        padding: 2rem;
+    }
+    .Register_form{
+        padding: 1.2rem;
+        width: 500px;
+    }
+}
+@media(min-width:998px){
+    .Register_header{
+        margin-bottom: 1.5rem;
+    }
+    .Register_title{
+        font-size: 1.6rem;
+    }
+    .logo{
+        height: 60px;
+        width: 60px;
+    }
+    .Register_form{
+        width: 600px;
+        border-radius: 0.5rem;
+        padding: 2.8rem;
+        box-shadow: var(--box-shadow);
+        
+    }
+    
+}

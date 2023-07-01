@@ -1,6 +1,6 @@
 .navbar {
     height: 70px;
-    background-color: #1B7E69;
+    background-color: var(--background-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,8 +11,9 @@
 
 .logo {
     font-size: 1.2rem;
-    margin: 15px;
-    color: white;
+    color: var(--text-color);
+    text-decoration: none;
+    margin-left: 0.5rem;
 }
 
 .nav_items {
@@ -27,11 +28,22 @@
     width: 100%;
     transform: translateX(-100%);
     transition: 0.5s ease all;
-    background-color: #1B7E69;
+    background-color: var(--background-color);
     padding-bottom: 20px;
     overflow: hidden;
 }
-
+.auth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    flex-direction: column;
+}
+.auth li .link{
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    border: 1px solid var(--text-color);
+    font-size: 1rem;
+}
 .nav_items.open {
     transform: translateX(0);
 }
@@ -44,7 +56,7 @@
 
 .nav_items li .link{
     margin: 15px;
-    color: white;
+    color: var(--text-color);
     position: relative;
     text-decoration: none;
     
@@ -52,6 +64,24 @@
 
 .navbar .nav_items {
     display: flex;
+}
+
+.btn_mode{
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.fas{
+    font-size: 1.7rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+}
+.fa-sun{
+    color: var(--text-color);
 }
 
 .nav_toggle {
@@ -63,7 +93,7 @@
 .nav_toggle span {
     width: 30px;
     height: 4px;
-    background-color: white;
+    background-color: var(--text-color);
     margin-bottom: 5px;
     border-radius: 2px;
     transform-origin: 5px 0;
@@ -84,10 +114,10 @@
 /* Estilos para tablet y desktop */
 @media (min-width: 768px){
     .navbar{
-        height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0));
     }
     .nav_items{
         position: static;
