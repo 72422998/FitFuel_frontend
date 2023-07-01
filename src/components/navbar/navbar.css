@@ -1,6 +1,6 @@
 .navbar {
     height: 70px;
-    background-color: var(--background-color);
+    background-color: var(--background-color-primary);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,7 +20,7 @@
 
 .logo_text {
     font-size: 1.2rem;
-    color: var(--text-color);
+    color: var(--text-color-secondary);
     text-decoration: none;
     margin-left: 0.5rem;
 }
@@ -39,7 +39,7 @@
     height: 100%;
     transform: translateX(-100%);
     transition: 0.5s ease all;
-    background-color: var(--background-color);
+    background-color: var(--background-color-primary);
     padding-bottom: 20px;
     overflow: hidden;
 }
@@ -52,7 +52,7 @@
 }
 .auth li .link{
     padding: 0.2rem 1rem 0.2rem 1rem;
-    border: 1px solid var(--text-color);
+    border: 1px solid var(--text-color-secondary);
     font-size: 1rem;
 }
 .nav_items.open {
@@ -67,7 +67,7 @@
 
 .nav_items li .link{
     margin: 15px;
-    color: var(--text-color);
+    color: var(--text-color-secondary);
     position: relative;
     text-decoration: none;
     font-size: 1.2rem;
@@ -95,7 +95,7 @@
     margin-left: 1.5rem;
 }
 .fa-sun{
-    color: var(--text-color);
+    color: var(--text-color-secondary);
 }
 
 .nav_toggle {
@@ -107,7 +107,7 @@
 .nav_toggle span {
     width: 30px;
     height: 4px;
-    background-color: var(--text-color);
+    background-color: var(--text-color-secondary);
     margin-bottom: 5px;
     border-radius: 2px;
     transform-origin: 5px 0;
@@ -131,7 +131,7 @@
         display: grid;
         grid-template-columns: 1fr 3fr;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0));
+ /*  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)); */
     }
    
     .nav_items{
